@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700;900&family=Bebas+Neue&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { width:1200px; height:630px; overflow:hidden; background:#0d0d0f; font-family:'Noto Sans KR',sans-serif; color:#f0ede8; position:relative; }
+.bg {
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 55% 60% at 18% 40%, rgba(124,106,247,0.20) 0%, transparent 70%),
+    radial-gradient(ellipse 45% 50% at 85% 30%, rgba(77,158,247,0.14) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 60% 105%, rgba(247,112,106,0.12) 0%, transparent 70%);
+}
+.noise {
+  position:absolute; inset:0; opacity:.4;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+.wrap { position:relative; z-index:2; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:0 80px; }
+.eyebrow { font-family:'Space Mono',monospace; font-size:20px; letter-spacing:.28em; color:#7c6af7; margin-bottom:26px; }
+.title { font-family:'Bebas Neue','Noto Sans KR',sans-serif; font-size:100px; line-height:.95; letter-spacing:0; font-weight:900; white-space:nowrap; }
+.title .accent { color:#7c6af7; }
+.sub { font-size:26px; font-weight:300; color:#a8a5b4; margin-top:30px; }
+.pills { display:flex; gap:14px; margin-top:38px; }
+.pill { font-size:20px; font-weight:500; padding:10px 24px; border-radius:100px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); color:#d8d5e2; }
+.badge { position:absolute; z-index:2; bottom:34px; left:0; right:0; text-align:center; font-family:'Space Mono',monospace; font-size:18px; color:#7c6af7; letter-spacing:.12em; }
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="noise"></div>
+<div class="wrap">
+  <div class="eyebrow">TEACHER'S AI COMPASS · 2026</div>
+  <div class="title">AI 도구 <span class="accent">완벽 가이드</span></div>
+  <div class="sub">대화부터 이미지 · 영상 · 코딩까지 — 꼭 알아야 할 AI 도구를 한눈에</div>
+  <div class="pills">
+    <span class="pill">💬 어시스턴트</span>
+    <span class="pill">🖥️ 업무 자동화</span>
+    <span class="pill">💻 코딩</span>
+    <span class="pill">🎨 이미지</span>
+    <span class="pill">🎬 영상·음악</span>
+  </div>
+</div>
+<div class="badge">✦ UPDATED AUGUST 2026 ✦</div>
+</body>
+</html>
